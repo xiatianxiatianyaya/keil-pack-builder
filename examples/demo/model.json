@@ -1,0 +1,158 @@
+{
+  "device": {
+    "name": "DemoM0",
+    "version": "0.0.1",
+    "description": "Synthetic Cortex-M0 example; not a real chip.",
+    "address_unit_bits": "8",
+    "width": "32",
+    "cpu_name": "CM0",
+    "revision": "r0p0",
+    "endian": "little",
+    "mpu_present": "false",
+    "fpu_present": "false",
+    "nvic_prio_bits": "2",
+    "vendor_systick_config": "false"
+  },
+  "peripherals": [
+    {
+      "name": "DEMO",
+      "base_address": 1073741824,
+      "description": "Synthetic peripheral for conversion testing.",
+      "source": "Peripherals!2",
+      "origin": "Synthetic example",
+      "registers": [
+        {
+          "name": "CTRL",
+          "offset": 0,
+          "address": 1073741824,
+          "size": 32,
+          "access": "read-write",
+          "reset_value": 0,
+          "reset_mask": 4294967295,
+          "modified_write_values": "",
+          "read_action": "",
+          "description": "Synthetic control register.",
+          "source": "Registers!2",
+          "origin": "Synthetic example",
+          "fields": [
+            {
+              "name": "EN",
+              "lsb": 0,
+              "width": 1,
+              "mask": 1,
+              "access": "read-write",
+              "modified_write_values": "",
+              "read_action": "",
+              "description": "Synthetic enable bit.",
+              "source": "Fields!2",
+              "origin": "Synthetic example",
+              "enums": [
+                {
+                  "name": "DISABLED",
+                  "value": 0,
+                  "description": "Disabled.",
+                  "source": "Enums!2",
+                  "origin": "Synthetic example"
+                },
+                {
+                  "name": "ENABLED",
+                  "value": 1,
+                  "description": "Enabled.",
+                  "source": "Enums!3",
+                  "origin": "Synthetic example"
+                }
+              ]
+            },
+            {
+              "name": "MODE",
+              "lsb": 1,
+              "width": 2,
+              "mask": 6,
+              "access": "read-write",
+              "modified_write_values": "",
+              "read_action": "",
+              "description": "Synthetic mode selection.",
+              "source": "Fields!3",
+              "origin": "Synthetic example",
+              "enums": [
+                {
+                  "name": "MODE_A",
+                  "value": 0,
+                  "description": "Synthetic mode A.",
+                  "source": "Enums!4",
+                  "origin": "Synthetic example"
+                },
+                {
+                  "name": "MODE_B",
+                  "value": 1,
+                  "description": "Synthetic mode B.",
+                  "source": "Enums!5",
+                  "origin": "Synthetic example"
+                },
+                {
+                  "name": "MODE_C",
+                  "value": 2,
+                  "description": "Synthetic mode C.",
+                  "source": "Enums!6",
+                  "origin": "Synthetic example"
+                },
+                {
+                  "name": "MODE_D",
+                  "value": 3,
+                  "description": "Synthetic mode D.",
+                  "source": "Enums!7",
+                  "origin": "Synthetic example"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "STATUS",
+          "offset": 4,
+          "address": 1073741828,
+          "size": 32,
+          "access": "read-write",
+          "reset_value": 0,
+          "reset_mask": 4294967295,
+          "modified_write_values": "",
+          "read_action": "",
+          "description": "Synthetic status register with a W1C flag.",
+          "source": "Registers!3",
+          "origin": "Synthetic example",
+          "fields": [
+            {
+              "name": "FLAG",
+              "lsb": 0,
+              "width": 1,
+              "mask": 1,
+              "access": "read-write",
+              "modified_write_values": "oneToClear",
+              "read_action": "",
+              "description": "Write one to clear this synthetic flag.",
+              "source": "Fields!4",
+              "origin": "Synthetic example",
+              "enums": []
+            }
+          ]
+        }
+      ],
+      "interrupts": [
+        {
+          "name": "DEMO",
+          "value": 0,
+          "description": "Synthetic external interrupt zero.",
+          "source": "Interrupts!2",
+          "origin": "Synthetic example"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Flat register subset only; no arrays, clusters, derivedFrom, alternate registers, writeConstraint or read/write-specific enums. Adapt explicitly rather than flatten silently."
+  ],
+  "source_workbook": {
+    "filename": "registers-template.xlsx",
+    "sha256": "27f050fe93b0024ae83f6035af5a4164ba48464db932e5438f906e5975df7021"
+  }
+}
