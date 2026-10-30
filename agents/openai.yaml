@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel 寄存器到 Keil PACK"
+  short_description: "将 Excel 寄存器表转换为寄存器描述和 SVD，检查并制作 Keil PACK"
+  default_prompt: "使用 $keil-pack-builder 检查我的 Excel 寄存器表，生成可追溯的寄存器描述和 SVD，再结合现有 FLM、启动文件和头文件制作并校验 Keil PACK。"
