@@ -1,0 +1,10 @@
+{
+  "pdsc": "REPLACE_VENDOR.REPLACE_DEVICE_DFP.pdsc",
+  "files": [
+    "REPLACE_VENDOR.REPLACE_DEVICE_DFP.pdsc",
+    "LICENSE.txt",
+    "Device/Include/REPLACE_DEVICE.h",
+    "SVD/REPLACE_DEVICE.svd",
+    "Flash/REPLACE_DEVICE.FLM"
+  ]
+}

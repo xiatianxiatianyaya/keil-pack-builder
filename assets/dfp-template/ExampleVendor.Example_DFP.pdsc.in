@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Skeleton only. Fill every REPLACE_* from confirmed chip facts.
+     Add real resources and compiler-specific Startup components. -->
+<package schemaVersion="1.7.36" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>REPLACE_VENDOR</vendor>
+  <name>REPLACE_DEVICE_DFP</name>
+  <description>REPLACE_PACKAGE_DESCRIPTION</description>
+  <url>https://REPLACE_HOST/packs/</url>
+  <license>LICENSE.txt</license>
+  <releases>
+    <release version="REPLACE_VERSION" date="REPLACE_DATE">REPLACE_RELEASE_NOTES</release>
+  </releases>
+  <devices>
+    <family Dfamily="REPLACE_FAMILY" Dvendor="REPLACE_VENDOR_ID">
+      <processor Dcore="REPLACE_CORE" Dclock="REPLACE_MAX_CLOCK_HZ"/>
+      <description>REPLACE_FAMILY_DESCRIPTION</description>
+      <device Dname="REPLACE_DEVICE">
+        <compile header="Device/Include/REPLACE_DEVICE.h" define="REPLACE_DEVICE_DEFINE"/>
+        <debug svd="SVD/REPLACE_DEVICE.svd"/>
+        <memory id="IROM1" start="REPLACE_FLASH_START" size="REPLACE_FLASH_SIZE" default="1" startup="1"/>
+        <memory id="IRAM1" start="REPLACE_RAM_START" size="REPLACE_RAM_SIZE" default="1"/>
+        <algorithm name="Flash/REPLACE_DEVICE.FLM" start="REPLACE_FLASH_START" size="REPLACE_FLASH_SIZE" default="1"/>
+      </device>
+    </family>
+  </devices>
+</package>
